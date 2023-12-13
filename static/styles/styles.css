@@ -1,0 +1,45 @@
+
+h1 {
+  font-size: 50px;
+  background-image: linear-gradient(to left, #09FF2A, #033306);
+  color: transparent;
+  background-clip: text;
+}
+h2 {
+  background-image: linear-gradient(45deg, #09FF2A, #07390A);
+  color: transparent;
+  background-clip: text;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+input[type=file]::file-selector-button{
+  background-color: lightgray;
+  border: 0;
+  padding: 16px 32px;
+  border-radius: 4px;
+  padding: .5em 2em;
+
+}
+input[type=file]::file-selector-button:hover{
+  background-color: lightgreen;
+  border: 0px;
+}
+.sel {border-radius: 10px;
+background-color: #04AA6D;
+padding: 9px 4px}
+.container1 {
+text-align: center;
+}
+.container2 {
+text-align: center;
+}
+
