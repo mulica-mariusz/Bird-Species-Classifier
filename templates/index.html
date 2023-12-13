@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test site</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}">
+
+</head>
+<body>
+<div class="container1">
+<h1>Bird Species Classifier</h1>
+<h2> Select chosen bird image </h2>
+</div>
+<div class="container2">
+<form lang="en" action="{{ url_for('upload_function') }}" enctype="multipart/form-data" method="POST">
+    <input name="img" type="file" accept="image/png, image/jpg, image/jpeg" class="sel"/>
+
+    <input type="submit" class="sub"/>
+</form>
+
+{% if img %}
+<img src="{{img}}" width="360" height="360">
+<h3>Custom model predicted class: {{lab1}}</h3>
+<h3>Pretrained model predicted class: {{lab2}}</h3>
+{% endif %}
+<h3>{{ext}}</h3>
+</div>
+</body>
+</html>
